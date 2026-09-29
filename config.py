@@ -5,8 +5,8 @@ from os import getenv
 from dotenv import load_dotenv
 from pyrogram import filters
 load_dotenv()
-API_ID = int(getenv("API_ID", "34766709"))
-API_HASH = getenv("API_HASH", "c70063901bc81555174389982a394f95")
+API_ID = int(getenv("API_ID", "38026274"))
+API_HASH = getenv("API_HASH", "025e6af819b1b299207bbab49b0313b1")
 BOT_TOKEN = getenv("BOT_TOKEN", "8564248095:AAEYoF6YaYvZ5zsXb4aVjYk18p4rRVbdXV4")
 OWNER_USERNAME = getenv("OWNER_USERNAME","sexydrifter")
 BOT_USERNAME = getenv("BOT_USERNAME" , "DolbyMusicRobot")
