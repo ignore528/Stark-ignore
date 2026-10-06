@@ -2,136 +2,43 @@
   "name": "Muskan Music Bot",
   "description": "A powerful Telegram Music Bot with Spotify, YouTube, SoundCloud & more support. Deploy in one click!",
   "logo": "https://telegra.ph/file/d723f4c80da157fca1678.jpg",
-  "keywords": ["telegram", "music", "bot", "python", "pyrogram"],
+  "keywords": [
+    "telegram",
+    "music",
+    "bot",
+    "python",
+    "pyrogram"
+  ],
   "repository": "https://github.com/MuskanBot/PAID_MUSIC_SRC",
   "stack": "container",
   "env": {
     "API_ID": {
-      "description": "Your Telegram API ID. Get it from https://my.telegram.org",
+      "description": "Your Telegram API ID",
       "required": true
     },
     "API_HASH": {
-      "description": "Your Telegram API Hash. Get it from https://my.telegram.org",
+      "description": "Your Telegram API Hash",
       "required": true
     },
     "BOT_TOKEN": {
-      "description": "Your Telegram Bot Token. Get it from @BotFather",
+      "description": "Your Telegram Bot Token",
       "required": true
     },
     "MONGO_DB_URI": {
-      "description": "Your MongoDB connection URI. Get it from https://cloud.mongodb.com",
+      "description": "Your MongoDB connection URI",
       "required": true
     },
     "LOGGER_ID": {
-      "description": "Telegram Channel/Group ID where bot will send logs (e.g. -1001234567890)",
+      "description": "Telegram channel/group ID for bot logs",
       "required": true
     },
     "OWNER_ID": {
-      "description": "Your Telegram User ID (numeric)",
+      "description": "Your Telegram User ID",
       "required": true
     },
     "STRING_SESSION": {
-      "description": "Pyrogram String Session for the assistant account. Generate using @StringFatherBot",
+      "description": "Pyrogram String Session for the assistant account",
       "required": true
-    },
-    "STRING_SESSION2": {
-      "description": "Second assistant String Session (optional)",
-      "required": false
-    },
-    "STRING_SESSION3": {
-      "description": "Third assistant String Session (optional)",
-      "required": false
-    },
-    "STRING_SESSION4": {
-      "description": "Fourth assistant String Session (optional)",
-      "required": false
-    },
-    "STRING_SESSION5": {
-      "description": "Fifth assistant String Session (optional)",
-      "required": false
-    },
-    "BOT_NAME": {
-      "description": "Display name of your bot (e.g. Muskan Music)",
-      "required": false,
-      "value": "Muskan Music"
-    },
-    "BOT_USERNAME": {
-      "description": "Bot username without @ (e.g. MuskanMusicBot)",
-      "required": false
-    },
-    "OWNER_USERNAME": {
-      "description": "Owner Telegram username without @ (e.g. YourName)",
-      "required": false
-    },
-    "ASSUSERNAME": {
-      "description": "Assistant account username without @",
-      "required": false
-    },
-    "SUPPORT_CHANNEL": {
-      "description": "Support channel link (must start with https://)",
-      "required": false
-    },
-    "SUPPORT_CHAT": {
-      "description": "Support chat group link (must start with https://)",
-      "required": false
-    },
-    "HEROKU_APP_NAME": {
-      "description": "Your Heroku app name (for auto-restart feature)",
-      "required": false
-    },
-    "HEROKU_API_KEY": {
-      "description": "Your Heroku API Key (for auto-restart feature). Get from https://dashboard.heroku.com/account",
-      "required": false
-    },
-    "GIT_TOKEN": {
-      "description": "GitHub Personal Access Token (for upstream update feature, optional)",
-      "required": false
-    },
-    "UPSTREAM_REPO": {
-      "description": "Upstream GitHub repo URL for auto-updates",
-      "required": false,
-      "value": "https://github.com/Muskan-Music-Bot/Muskan-Music-Bot"
-    },
-    "UPSTREAM_BRANCH": {
-      "description": "Upstream repo branch for auto-updates",
-      "required": false,
-      "value": "main"
-    },
-    "SPOTIFY_CLIENT_ID": {
-      "description": "Spotify API Client ID (optional, has default)",
-      "required": false
-    },
-    "SPOTIFY_CLIENT_SECRET": {
-      "description": "Spotify API Client Secret (optional, has default)",
-      "required": false
-    },
-    "DURATION_LIMIT": {
-      "description": "Maximum song duration in minutes",
-      "required": false,
-      "value": "17000"
-    },
-    "PLAYLIST_FETCH_LIMIT": {
-      "description": "Maximum songs to fetch from a playlist",
-      "required": false,
-      "value": "25"
-    },
-    "START_IMG_URL": {
-      "description": "Image URL for /start command",
-      "required": false
-    },
-    "PING_IMG_URL": {
-      "description": "Image URL for /ping command",
-      "required": false
-    },
-    "AUTO_LEAVING_ASSISTANT": {
-      "description": "Auto leave assistant from empty voice chats (True/False)",
-      "required": false,
-      "value": "False"
-    },
-    "ASSISTANT_LEAVE_TIME": {
-      "description": "Time in seconds before assistant auto-leaves",
-      "required": false,
-      "value": "9000"
     }
   },
   "formation": {
