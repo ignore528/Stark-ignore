@@ -13,33 +13,33 @@ assistantids = []
 class Userbot(Client):
     def __init__(self):
         self.one = Client(
-            name="MuskanAss",
+            name="MuskanAss1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
-            session_string=str(config.STRING),
+            session_string=str(config.STRING1),
             no_updates=True,
         )
 
     async def start(self):
-        LOGGER(__name__).info("Starting Assistant...")
+        LOGGER(__name__).info("Starting Assistants...")
 
-        if config.STRING:
+        if config.STRING1:
             await self.one.start()
 
             assistants.append(1)
 
-            try:
-                await self.one.send_message(
-                    config.LOGGER_ID,
-                    "Assistant Started ✅"
-                )
-            except:
-                LOGGER(__name__).error(
-                    "Assistant has failed to access the log Group. "
-                    "Make sure that you have added your assistant "
-                    "to your log group and promoted as admin!"
-                )
-                exit()
+            # Log Group notification
+            if config.LOGGER_ID:
+                try:
+                    await self.one.send_message(
+                        config.LOGGER_ID,
+                        "Assistant Started ✅"
+                    )
+                except Exception as e:
+                    LOGGER(__name__).warning(
+                        f"Assistant could not access the log Group. "
+                        f"Skipping log notification: {e}"
+                    )
 
             self.one.id = self.one.me.id
             self.one.name = self.one.me.mention
@@ -52,10 +52,10 @@ class Userbot(Client):
             )
 
     async def stop(self):
-        LOGGER(__name__).info("Stopping Assistant...")
+        LOGGER(__name__).info("Stopping Assistants...")
 
         try:
-            if config.STRING:
+            if config.STRING1:
                 await self.one.stop()
-        except:
+        except Exception:
             pass
