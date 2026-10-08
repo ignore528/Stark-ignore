@@ -18,7 +18,7 @@ httpx==0.28.1
 requests==2.34.2
 
 # ── Music Platforms ───────────────────────────────────────────────────
-yt-dlp>=2026.10.01
+yt-dlp[default]==2026.9.27.232945.dev0
 spotipy==2.26.0
 py_yt_search==0.7.2
 beautifulsoup4==4.15.0
