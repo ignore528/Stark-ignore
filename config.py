@@ -97,4 +97,103 @@ SUPPORT_CHANNEL = getenv(
 
 SUPPORT_CHAT = getenv(
     "SUPPORT_CHAT",
-    "http://t
+    "http://t.me/textables"
+)
+
+SOURCE = getenv(
+    "SOURCE",
+    "https://t.me/sexydrifter"
+)
+
+CHAT = getenv("CHAT", "")
+
+
+# =========================
+# ASSISTANT SETTINGS
+# =========================
+
+AUTO_LEAVING_ASSISTANT = getenv(
+    "AUTO_LEAVING_ASSISTANT",
+    "False"
+)
+
+AUTO_LEAVE_ASSISTANT_TIME = int(
+    getenv("ASSISTANT_LEAVE_TIME", "9000")
+)
+
+
+# =========================
+# DOWNLOAD SETTINGS
+# =========================
+
+SONG_DOWNLOAD_DURATION = int(
+    getenv("SONG_DOWNLOAD_DURATION", "9999999")
+)
+
+SONG_DOWNLOAD_DURATION_LIMIT = int(
+    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "9999999")
+)
+
+
+# =========================
+# SPOTIFY
+# =========================
+
+SPOTIFY_CLIENT_ID = getenv(
+    "SPOTIFY_CLIENT_ID",
+    ""
+)
+
+SPOTIFY_CLIENT_SECRET = getenv(
+    "SPOTIFY_CLIENT_SECRET",
+    ""
+)
+
+PLAYLIST_FETCH_LIMIT = int(
+    getenv("PLAYLIST_FETCH_LIMIT", "25")
+)
+
+
+# =========================
+# FILE SIZE LIMITS
+# =========================
+
+TG_AUDIO_FILESIZE_LIMIT = int(
+    getenv("TG_AUDIO_FILESIZE_LIMIT", "5242880000")
+)
+
+TG_VIDEO_FILESIZE_LIMIT = int(
+    getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000")
+)
+
+
+# =========================
+# BANNED USERS
+# =========================
+
+BANNED_USERS = set()
+
+
+# =========================
+# OTHER SETTINGS
+# =========================
+
+YOUTUBE_DOWNLOAD_ATTEMPTS = int(
+    getenv("YOUTUBE_DOWNLOAD_ATTEMPTS", "3")
+)
+
+COOKIE_URL = getenv("COOKIE_URL", "")
+
+CLEANMODE = getenv("CLEANMODE", "False").lower() == "true"
+
+PING_IMG = getenv("PING_IMG", "")
+
+START_IMG_URL = getenv("START_IMG_URL", "")
+
+HELP_IMG_URL = getenv("HELP_IMG_URL", "")
+
+PLAY_IMG_URL = getenv("PLAY_IMG_URL", "")
+
+SONG_IMG_URL = getenv("SONG_IMG_URL", "")
+
+QUEUE_IMG_URL = getenv("QUEUE_IMG_URL", "")
