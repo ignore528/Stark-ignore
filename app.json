@@ -36,7 +36,7 @@
       "description": "Your Telegram User ID",
       "required": true
     },
-    "STRING_SESSION1": {
+    "STRING_SESSION": {
       "description": "Pyrogram String Session",
       "required": true
     }
